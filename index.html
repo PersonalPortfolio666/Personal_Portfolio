@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6ddec22307.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#header"><img src="images/Logo.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <!-- HERO SECTION -->
+            <div class="header-text">
+                <p>Front-End Developer & IT Student</p>
+                <h1>Hi, I'm <span>Mashele Louis</span></h1>
+                <p class="intro-text">
+                    A passionate developer focused on crafting responsive and user-friendly websites using HTML, CSS, JavaScript, and PHP.
+                    I turn ideas into clean, functional digital experiences. Let’s build something great together.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn2">Contact Me</a>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/WhatsApp Image 2024-06-10 at 15.12.27_b7fbbfc0.jpg" width="400">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi My name is Louis, a passionate and driven final-year Information Technology student at Vaal University of Technology. 
+                        I specialize in software development and networking, with hands-on experience in Java, Visual Basic, and Oracle PL/SQL.
+                        I'm especially interested in building real world solutions from property sales apps and gaming platforms to secure network infrastructures. 
+                        My recent work includes a Java-based Credit Card Points App and a Packet Tracer project simulating enterprise grade networking setups.
+                        I love learning and pushing myself beyond the classroom. Whether it's exploring smart money trading bots, 
+                        developing user-friendly mobile app prototypes, or diving into test-driven development with JUnit.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2024</span><br>App designing using VB.NET</li>
+                            <li><span>2023</span><br>SQL</li>
+                            <li><span>2023 - Current</span><br>Web Developer at Mashele Technologies</li>
+                            <li><span>2024</span><br>PL/SQL</li>
+                            <li><span>2023 - Current</span><br>Project Management</li>
+                            <li><span>2024 - Current</span><br>App designing using Java</li>
+                            <li><span>2024 - Current</span><br>Website Development</li>
+                            <li><span>2025</span><br>FNB App of The year</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Matriculated at Ditlalemeso Secondary School</li>
+                            <li><span>2023</span><br>First Year at Vaal University of Technology</li>
+                            <li><span>2024</span><br>Second Year at Vaal University of Technology</li>
+                            <li><span>2024</span><br>UI/UX Design Training at Vaal University of Technology</li>
+                            <li><span>2025</span><br>Third Year at Vaal University of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I can also do User Interfaces and User experiences for the website which is the backend 
+                        development of the web design.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I can design a website for any business or company.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Work-1.png" width="400">
+                    <div class="layer">
+                        <h3>Coffee Shop Website</h3>
+                        <p>This was my assignment that I was given from my lecturer who was teaching me Web Development.</p>
+                        <a href="file:///C:/Users/louis/Desktop/new%20portfolio/index.html"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> louis.mash02@gmil.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0614784577</p>
+                    <div class="social-icons">
+                        <a href="https://web.facebook.com/mash.louis.2025"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/LouisMashele"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.instagram.com/louis.m_16/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/nkgere-louis-mashele-938655259/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Mashele NKgere Louis's Resume.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Louis. Made by <i class="fa-solid fa-6"></i> Mashele Technologies</p>
+        </div>
+    </div>
+
+    <!-- Color Mode Toggle -->
+    <div class="color-mode">
+       <button class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    </div>
+
+    <!-- JavaScript for Tabs and Menu -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+        function toggleMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+    <script>
+        // JavaScript for Side Menu
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
